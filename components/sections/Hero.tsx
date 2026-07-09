@@ -32,7 +32,7 @@ export function Hero({ title, subtitle, ctaText, ctaHref, backgroundImageUrl, st
         <p className="mt-4 max-w-xl font-body text-lg text-white/80">{subtitle}</p>
 
         <div className="mt-8">
-          <Button size="lg" onClick={() => (window.location.href = ctaHref)}>
+          <Button size="lg" href={ctaHref}>
             {ctaText}
           </Button>
         </div>
