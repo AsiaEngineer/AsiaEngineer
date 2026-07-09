@@ -20,7 +20,7 @@ export function CTASection({ title, description, ctaText, ctaHref }: CTASectionP
           <p className="mx-auto mt-3 max-w-xl font-body text-secondary/70">{description}</p>
         )}
         <div className="mt-6">
-          <Button size="lg" onClick={() => (window.location.href = ctaHref)}>
+          <Button size="lg" href={ctaHref}>
             {ctaText}
           </Button>
         </div>
